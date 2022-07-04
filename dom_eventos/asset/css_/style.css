@@ -1,0 +1,111 @@
+.pb-4{
+    font-family:'Joan', serif;
+}
+.color{
+    background-color: #17176c;
+}
+
+
+.myacordin {
+    max-width: 300px !important;
+    margin: 50px auto;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    float: left !important;
+}
+.accordion-body {
+    max-width: 300px !important;
+}
+
+.button {
+    padding: 15px 25px !important;
+    border: unset !important;
+    border-radius: 15px !important;
+    color: #212121 !important;
+    z-index: 1 !important;
+    background: #e8e8e8 !important;
+    position: relative !important;
+    font-weight: 1000 !important;
+    font-size: 17px !important;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27) !important;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27) !important;
+    transition: all 250ms !important;
+    overflow: hidden !important;
+}
+
+.button::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 0 !important;
+    border-radius: 15px !important;
+    background-color: #212121 !important;
+    z-index: -1 !important;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27) !important;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27) !important;
+    transition: all 250ms !important;
+}
+
+.button:hover {
+    color: #e8e8e8 !important;
+}
+
+.button:hover::before {
+    width: 100% !important;
+}
+
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 100%;
+}
+.btn:hover {
+    color: black;
+}
+.btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#image {
+
+    border: 1px solid;
+    border-radius: 100%;
+    font-size: 11px;
+    transition: all 0.5s;
+    z-index: 99;
+    width: 166.875px !important;
+    height: 133.5px !important;
+}
+
+#image:hover {
+    transform: scale(1.1);
+    border: 1px solid #f0f0f0;
+
+}
